@@ -24,9 +24,7 @@ public class TasksRestController {
 		System.out.println("tasks/index");
 		return service.getAll();
 	}
-	
 
-	
 	@PostMapping("/tasks/add")
 	public int add(@RequestBody Tasks task) {
 		System.out.println("tasks/add(post)");
