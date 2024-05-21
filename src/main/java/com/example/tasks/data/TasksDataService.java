@@ -32,8 +32,6 @@ public class TasksDataService {
 		return repository.findByDate(task.getDate());
 	}
 	
-	
-	
 	public void update(TasksDataInterface item) {
 		System.out.println("Service:update[" + item + "]");
 		if (item instanceof Tasks) {
