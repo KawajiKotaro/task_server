@@ -36,4 +36,10 @@ public class TasksRestController {
 		System.out.println("Apartment/update(post)");
 		service.update(task);
 	}
+	
+	@PostMapping("/tasks/delete")
+	public void delete(@RequestBody Tasks task) {
+		System.out.println("tasks/delete(post)");
+		service.delete(task);
+	}
 }

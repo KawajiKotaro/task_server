@@ -43,4 +43,11 @@ public class TasksDataService {
 			}
 		}
 	}
+	
+	public void delete(TasksDataInterface item) {
+		System.out.println("Service:delete[" + item + "]");
+		if (item instanceof Tasks) {
+			repository.delete((Tasks) item);
+		}
+	}
 }
