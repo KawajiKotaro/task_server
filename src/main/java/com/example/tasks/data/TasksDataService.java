@@ -27,9 +27,9 @@ public class TasksDataService {
 		return 0;
 	}
 	
-	public List<? extends TasksDataInterface> findBySelectDate(Tasks task) {
+	public List<? extends TasksDataInterface> findBySelectDate(java.sql.Date date) {
 		System.out.println("Service:findBydate");
-		return repository.findByDate(task.getDate());
+		return repository.findByDate(date);
 	}
 	
 	public void update(TasksDataInterface item) {
